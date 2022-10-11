@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#game{
+    width: 80%;
+    height: 500px;
+    border: 1px solid black;
+    border-bottom: 15px solid rgb(24, 88, 40);
+    margin: 70px auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87CEEB, #E0F6FF);
+}
+
+.clouds{
+    width: 450px;
+    position: absolute; 
+    animation: clouds 20s infinite linear;  
+}
+
+#pipe{
+    position: absolute;
+    top: 400px;
+    width: 80px;
+    animation: pipe 1.5s infinite linear;
+}
+#sonic{
+    width: 150px;
+    position: absolute;
+    top: 335px;
+}
+.animar{
+    animation: sonic 500ms ease;
+}
+
+@keyframes sonic {  
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+@keyframes pipe {
+    from{right:-10%;}
+    to{right:110%;}
+}
+@keyframes clouds{
+    from{right: -460px;}
+    to{right:120%;}
+}
+    
+
+
